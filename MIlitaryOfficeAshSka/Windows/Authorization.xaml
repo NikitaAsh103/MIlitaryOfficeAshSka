@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="Authorization" Height="1024" Width="1440">
     <Grid>
+        <Grid.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF78866B" Offset="0"/>
+            </RadialGradientBrush>
+        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
@@ -24,40 +30,52 @@
                    VerticalAlignment="Center" 
                    HorizontalAlignment="Center"
                    Grid.Column="1"
-                   FontSize="40"/>
-      
+                   FontSize="70" FontWeight="Bold"
+                   />
+
         <TextBox Text="Введите Логин"
                  VerticalAlignment="Center" 
                  HorizontalAlignment="Center"
                  Grid.Column="1"
                  Grid.Row="1"
                  FontSize="25"
-                 Height="80"
-                 Width="350"
+                  Height="70"
+                 Width="450"
+                 x:Name="TbLog"
+                
+                 
+                 Style="{StaticResource tbStyle}" 
+                 
                  
                  />
-        
-        <TextBox Text="Вваедите пароль"
+
+        <TextBox Text="Введите пароль"
                  VerticalAlignment="Center"
                  HorizontalAlignment="Center"
                  Grid.Column="1"
                  Grid.Row="2"
                  FontSize="25"
+                 Height="70"
+                 Width="450"
              
                  
                  Style="{StaticResource tbStyle}"
            />
         <Button
             Grid.Column="1"
-            Grid.Row="3" 
-            Background="#FFEBEBEB"
-            Height="150"
+            Grid.Row="3"  Height="150"
             Width="375"
             Content="Войти"
             FontSize="35"
             Style="{StaticResource btnStyle}"
            
             />
+        <!--<Image Margin="104,22,114,12" Source="/Image4.png" Stretch="Fill"
+               Grid.Column="0"
+               Grid.Row="0"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               Height="30"/>-->
 
 
     </Grid>

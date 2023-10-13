@@ -11,7 +11,7 @@
                 </Style>
             </Style.Resources>
             <Setter Property="Cursor" Value="Hand"/>
-            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="BorderThickness" Value="5"/>
             <Setter Property="Background" Value="#F4F5F7"/>
         </Style>
 
@@ -28,9 +28,13 @@
             <Setter Property="FontSize" Value="20"/>
             <Setter Property="HorizontalContentAlignment" Value="Left"/>
             <Setter Property="VerticalContentAlignment" Value="Center"/>
-            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="BorderBrush" Value="#FF775702"/>
+            
             <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="BorderThickness" Value="5"/>
             <Setter Property="Padding" Value="3"/>
+            
+            
         </Style>
     </Application.Resources>
 </Application>

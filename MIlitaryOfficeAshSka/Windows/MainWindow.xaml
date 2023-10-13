@@ -5,11 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MIlitaryOfficeAshSka"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="1024" Width="1440">
     <Grid>
-        <Label>
-            Мы начали работать!
-        </Label>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+           
+        </Grid.RowDefinitions>
+
+        <Button
+            Grid.Row="1"
+            Content="Создать взвод"
+            Height="200"
+            Width="900" 
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Style="{StaticResource btnStyle}"
+            FontSize="80"
+            />
+
+        <Button
+            Grid.Row="2"
+            Content="Просмотреть взвод"
+            Height="200"
+            Width="900" 
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Style="{StaticResource btnStyle}"
+            FontSize="80"
+            />
+
+
     </Grid>
 </Window>

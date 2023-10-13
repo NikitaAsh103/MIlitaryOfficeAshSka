@@ -23,5 +23,13 @@ namespace MIlitaryOfficeAshSka.Windows
         {
             InitializeComponent();
         }
+
+        private void TextBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            if (TbLog.Text == "Введите Логин")
+            {
+                TbLog.Text = "";
+            }
+        }
     }
 }
