@@ -18,7 +18,12 @@
                 Grid.ColumnSpan="6"
                 Grid.RowSpan="6"
                 />
-        
+        <TextBlock
+            Grid.Column="1"
+            Grid.ColumnSpan="2"
+            Text="Взвод №1"
+            FontSize="70"/>
+
 
         <Grid.ColumnDefinitions>
         <ColumnDefinition Width="*"/>
@@ -39,7 +44,9 @@
         <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        
+     
+
     </Grid>
+    
 
 </Page>
