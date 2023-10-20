@@ -58,6 +58,9 @@
     <Compile Include="Pages\CreatePlatoon.xaml.cs">
       <DependentUpon>CreatePlatoon.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\InformationConnscript.xaml.cs">
+      <DependentUpon>InformationConnscript.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ViewPlatoon.xaml.cs">
       <DependentUpon>ViewPlatoon.xaml</DependentUpon>
     </Compile>
@@ -65,6 +68,10 @@
       <DependentUpon>Authorization.xaml</DependentUpon>
     </Compile>
     <Page Include="Pages\CreatePlatoon.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\InformationConnscript.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

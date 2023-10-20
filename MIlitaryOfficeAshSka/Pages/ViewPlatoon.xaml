@@ -10,6 +10,8 @@
 
     <Grid>
 
+        
+
         <Border Background="Green"
              Grid.RowSpan="6"/>
 
@@ -18,35 +20,157 @@
                 Grid.ColumnSpan="6"
                 Grid.RowSpan="6"
                 />
-        <TextBlock
-            Grid.Column="1"
-            Grid.ColumnSpan="2"
-            Text="Взвод №1"
-            FontSize="70"/>
+        <Button
+            Grid.Column="0"
+            Grid.Row="0"
+            Height="150"
+            Width="170"
+           Background="Green"
+            BorderBrush="Green"
+            FontSize="40"
+             />
+        <Rectangle
+            Grid.Column="0"
+            Grid.Row="0"
+            Fill="White"
+            Height="30"
+            Width="140"
+            VerticalAlignment="Top"
+            Margin="0 30 0 0"
+            
+            
+            />
+
+        <Rectangle
+            Grid.Column="0"
+            Grid.Row="0"
+            Fill="White"
+            Height="30"
+            Width="140"
+            VerticalAlignment="Center"/>
+
+        <Rectangle
+            Grid.Column="0"
+            Grid.Row="0"
+            Fill="White"
+            Height="30"
+            Width="140"
+            VerticalAlignment="Bottom"
+            Margin="0 0 0 30"/>
+
+       
+
+
+        <ListView x:Name="LvProduct"
+                 Grid.Row="0"
+                  Grid.Column="1"
+                  Margin="5"
+                  Grid.ColumnSpan="6"
+                  Grid.RowSpan="6"
+                  ScrollViewer.HorizontalScrollBarVisibility="Disabled" d:ItemsSource="{d:SampleData ItemCount=6}" 
+                  >
+
+
+
+
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel/>
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <!-- Шаблон одного элемета -->
+                    <StackPanel>
+
+                        <WrapPanel>
+
+
+                            <TextBlock
+                                Height="70"
+                                Width="350"
+                                Text="Взвод №1"
+                                FontSize="50"
+                                Margin="15 45 0 0"/>
+
+
+                            <Button
+                                Height="50"
+                                Width="200"
+                                Margin="390 45 0 0 "
+                                Content="Просмотреть"
+                                FontSize="28"
+                                Style="{StaticResource btnStyle}"
+                                Background="#FF15BE0B" 
+                                BorderBrush="#FF0B4900"
+                                FontWeight="Bold" 
+                                />
+                            <Button
+                                Height="50"
+                                Width="200"
+                                Margin="30 45 0 0"
+                                Content="Удалить"
+                                FontSize="28" 
+                                FontWeight="Bold" 
+                                BorderBrush="#FF660000"
+                                BorderThickness="5" Background="#FFDD1515"
+                                Style="{StaticResource btnStyle}"
+                                
+
+
+                                />
+                            
+
+                            <Border
+                                Height="90"
+                                Width="1210"
+                                Margin="0 -80 0 0"
+                                BorderBrush="Green"
+                                BorderThickness="3"
+                                CornerRadius="12"/>
+
+                           
+
+                        </WrapPanel>
+
+
+
+
+                    </StackPanel>
+
+
+
+
+
+
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
 
 
         <Grid.ColumnDefinitions>
-        <ColumnDefinition Width="*"/>
-        <ColumnDefinition Width="*"/>
-        <ColumnDefinition Width="*"/>
-        <ColumnDefinition Width="*"/>
-        <ColumnDefinition Width="*"/>
-        <ColumnDefinition Width="*"/>
-        <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-    <Grid.RowDefinitions>
-        <RowDefinition Height="*"/>
-        <RowDefinition Height="*"/>
-        <RowDefinition Height="*"/>
-        <RowDefinition Height="*"/>
-        <RowDefinition Height="*"/>
-        <RowDefinition Height="*"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-     
+
 
     </Grid>
-    
+
 
 </Page>
