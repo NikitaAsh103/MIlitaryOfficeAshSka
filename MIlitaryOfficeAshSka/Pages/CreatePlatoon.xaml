@@ -19,11 +19,40 @@
         <Button
             Grid.Column="0"
             Grid.Row="0"
-            Height="100"
+            Height="150"
             Width="170"
-            Content="Меню"
+           Background="Green"
+            BorderBrush="Green"
             FontSize="40"
              />
+        <Rectangle
+            Grid.Column="0"
+            Grid.Row="0"
+            Fill="White"
+            Height="30"
+            Width="140"
+            VerticalAlignment="Top"
+            Margin="0 30 0 0"
+            
+            
+            />
+
+        <Rectangle
+            Grid.Column="0"
+            Grid.Row="0"
+            Fill="White"
+            Height="30"
+            Width="140"
+            VerticalAlignment="Center"/>
+
+        <Rectangle
+            Grid.Column="0"
+            Grid.Row="0"
+            Fill="White"
+            Height="30"
+            Width="140"
+            VerticalAlignment="Bottom"
+            Margin="0 0 0 30"/>
 
         <ListView x:Name="LvProduct"
                  Grid.Row="0"
@@ -59,7 +88,7 @@
                                 Width="200"
                                 Text="Скаков А.Д"
                                 FontSize="30"
-                                Margin="85 15 0 0"/>
+                                Margin="85 -35 0 0"/>
 
 
                             <Button
@@ -69,6 +98,12 @@
                                 Content="Подробнее"
                                 FontSize="30"
                                 />
+                            <Button
+                                Height="50"
+                                Width="200"
+                                Content="Добавить в вз"
+                                FontSize="30"
+                                Margin="85 15 0 0 "/>
 
                         </StackPanel>
 

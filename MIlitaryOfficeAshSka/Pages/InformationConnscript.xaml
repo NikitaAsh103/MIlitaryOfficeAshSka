@@ -5,10 +5,108 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:MIlitaryOfficeAshSka.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="600" d:DesignWidth="800"
       Title="InformationConnscript">
 
-    <Grid>
+    <Grid RenderTransformOrigin="0.5,0.5">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="0"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+
+
+        <Border Background="White"
+                Grid.Column="0"
+                Grid.ColumnSpan="7"
+                Grid.RowSpan="7"
+                />
+
+        <Image
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            Grid.Row="1"
+            Grid.RowSpan="2"
+            
+           />
+
+        <TextBlock 
+            Grid.Column="2"
+            Grid.Row="1"
+            Grid.ColumnSpan="3"
+            Text="Скаков Александр Дмитриевич"
+            FontSize="21"
+            VerticalAlignment="Top" FontWeight="Bold"
+            HorizontalAlignment="Right"
+            />
+
+        <TextBlock
+            Grid.Row="2"
+            Grid.Column="2"
+            />
+
         
+        <Button
+            Grid.Column="6"
+            Grid.Row="0" Background="White"
+            />
+        <Rectangle Fill="Black"
+           Height="7"
+           Width="40" RenderTransformOrigin="1,0" 
+                   Grid.Column="6"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   Margin=" -20 -15 0 0"
+                   >
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-45"/>
+                    <TranslateTransform X="0"/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+
+        <Rectangle Fill="Black"
+                   Height="7"
+           Width="40" RenderTransformOrigin="0.5,0.5"
+                   Grid.Column="6"
+                   Margin="-3 8 0 -3"
+                   
+            >
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="45"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
     </Grid>
 </Page>
