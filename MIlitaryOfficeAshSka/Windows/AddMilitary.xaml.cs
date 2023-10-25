@@ -10,23 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using MIlitaryOfficeAshSka.Pages;
-using MIlitaryOfficeAshSka.ClassHelper;
 
-namespace MIlitaryOfficeAshSka
+namespace MIlitaryOfficeAshSka.Windows
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для AddMilitary.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AddMilitary : Window
     {
-        public MainWindow()
+        public AddMilitary()
         {
             InitializeComponent();
-            Navigate.mainFrame = fr_main;
-            Navigate.mainFrame.Navigate(new MenuPage());
         }
     }
 }

@@ -23,6 +23,8 @@
             Width="170"
            Background="Green"
             BorderBrush="Green"
+            x:Name="btn_exit"
+            Click="btn_exit_Click"
             FontSize="40"
              />
         <Rectangle

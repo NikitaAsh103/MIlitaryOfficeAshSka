@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using MIlitaryOfficeAshSka.Pages;
+using MIlitaryOfficeAshSka.ClassHelper;
+
 
 namespace MIlitaryOfficeAshSka.Pages
 {
@@ -23,6 +26,11 @@ namespace MIlitaryOfficeAshSka.Pages
         public CreatePlatoon()
         {
             InitializeComponent();
+        }
+
+        private void btn_exit_Click(object sender, RoutedEventArgs e)
+        {
+            Navigate.mainFrame.GoBack();
         }
     }
 }

@@ -15,18 +15,21 @@ using System.Windows.Shapes;
 using MIlitaryOfficeAshSka.Pages;
 using MIlitaryOfficeAshSka.ClassHelper;
 
-namespace MIlitaryOfficeAshSka
+namespace MIlitaryOfficeAshSka.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для MenuPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MenuPage : Page
     {
-        public MainWindow()
+        public MenuPage()
         {
             InitializeComponent();
-            Navigate.mainFrame = fr_main;
-            Navigate.mainFrame.Navigate(new MenuPage());
+        }
+
+        private void create_btn_Click(object sender, RoutedEventArgs e)
+        {
+            Navigate.mainFrame.Navigate(new CreatePlatoon());
         }
     }
 }

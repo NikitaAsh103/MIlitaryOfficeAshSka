@@ -62,12 +62,13 @@
                  Style="{StaticResource tbStyle}"
            />
         <Button
+            x:Name="BtnAuth"
             Grid.Column="1"
             Grid.Row="3"  Height="150"
             Width="375"
             Content="Войти"
             FontSize="35"
-            Style="{StaticResource btnStyle}"
+            Style="{StaticResource btnStyle}" Click="BtnAuth_Click"
            
             />
         <!--<Image Margin="104,22,114,12" Source="/Image4.png" Stretch="Fill"
@@ -76,6 +77,8 @@
                HorizontalAlignment="Center"
                VerticalAlignment="Center"
                Height="30"/>-->
+        
+        
 
 
     </Grid>

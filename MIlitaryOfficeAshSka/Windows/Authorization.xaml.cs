@@ -31,5 +31,12 @@ namespace MIlitaryOfficeAshSka.Windows
                 TbLog.Text = "";
             }
         }
+        
+        private void BtnAuth_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow main = new MainWindow();
+            main.Show();
+            this.Close();
+        }
     }
 }
