@@ -71,12 +71,7 @@
             Style="{StaticResource btnStyle}" Click="BtnAuth_Click"
            
             />
-        <!--<Image Margin="104,22,114,12" Source="/Image4.png" Stretch="Fill"
-               Grid.Column="0"
-               Grid.Row="0"
-               HorizontalAlignment="Center"
-               VerticalAlignment="Center"
-               Height="30"/>-->
+        
         
         
 
