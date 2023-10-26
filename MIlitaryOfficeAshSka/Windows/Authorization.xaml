@@ -43,7 +43,7 @@
                  Width="450"
                  x:Name="TbLog"
                 
-                 
+                 GotFocus="TbLog_GotFocus"
                  Style="{StaticResource tbStyle}" 
                  
                  
@@ -57,6 +57,8 @@
                  FontSize="25"
                  Height="70"
                  Width="450"
+                 x:Name="TbPass"
+                 GotFocus="TbPass_GotFocus"
              
                  
                  Style="{StaticResource tbStyle}"

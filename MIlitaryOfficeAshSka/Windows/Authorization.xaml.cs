@@ -24,19 +24,31 @@ namespace MIlitaryOfficeAshSka.Windows
             InitializeComponent();
         }
 
-        private void TextBox_GotFocus(object sender, RoutedEventArgs e)
-        {
-            if (TbLog.Text == "Введите Логин")
-            {
-                TbLog.Text = "";
-            }
-        }
+       
         
         private void BtnAuth_Click(object sender, RoutedEventArgs e)
         {
             MainWindow main = new MainWindow();
             main.Show();
             this.Close();
+        }
+
+        private void TbLog_GotFocus(object sender, RoutedEventArgs e)
+        {
+            if (TbLog.Text == "Введите Логин")
+            {
+                TbLog.Text = "";
+            }    
+        }
+
+      
+
+        private void TbPass_GotFocus(object sender, RoutedEventArgs e)
+        {
+            if (TbPass.Text== "Введите пароль")
+            {
+                TbPass.Text = "";
+            }    
         }
     }
 }
