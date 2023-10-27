@@ -22,6 +22,19 @@ namespace MIlitaryOfficeAshSka.Windows
         public AddMilitary()
         {
             InitializeComponent();
+            gender.ItemsSource = new Person[]
+        {
+            new Person { Name = "Женский" },
+            new Person { Name = "Мужской",  },
+            
+        };
         }
     }
+    public class Person
+    {
+        public string Name { get; set; } = "";
+        public override string ToString() => $"{Name} ";
+    }
 }
+    
+

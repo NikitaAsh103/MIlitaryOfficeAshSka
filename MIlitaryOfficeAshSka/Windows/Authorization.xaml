@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MIlitaryOfficeAshSka.Windows"
         mc:Ignorable="d"
-        Title="Authorization" Height="1024" Width="1440">
+        Title="Authorization" Height="1024" Width="1440"
+        WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.Background>
             <RadialGradientBrush>
@@ -25,6 +26,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+        
 
         <TextBlock Text="Авторизация" 
                    VerticalAlignment="Center" 
@@ -73,9 +75,16 @@
             Style="{StaticResource btnStyle}" Click="BtnAuth_Click"
            
             />
-        
-        
-        
+        <Image  Source="/Image7.png" Stretch="Fill"
+                Grid.Column="0"
+                Grid.Row="0"
+                Height="250"
+                Width="300"
+                HorizontalAlignment="Left"/>
+
+
+
+
 
 
     </Grid>

@@ -6,7 +6,8 @@
       xmlns:local="clr-namespace:MIlitaryOfficeAshSka.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="1024" d:DesignWidth="1440"
-      Title="CreatePlatoon">
+      Title="CreatePlatoon"
+      >
 
     <Grid>
         <Border Background="Green"
@@ -83,7 +84,7 @@
                             <Image
                         Height="200"
                         Width="200"
-                                Margin="85 15 0 100 "/>
+                                Margin="85 1 0 100 "/>
 
                             <TextBlock
                                 Height="50"
@@ -106,6 +107,12 @@
                                 Content="Добавить в вз"
                                 FontSize="30"
                                 Margin="85 15 0 0 "/>
+                            <Button
+                                Height="50"
+                                Width="200"
+                                Margin="85 15 0 0"
+                                Content="Удалить"
+                                FontSize="30"/>
 
                         </StackPanel>
 

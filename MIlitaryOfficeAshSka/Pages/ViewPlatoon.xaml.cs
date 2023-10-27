@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MIlitaryOfficeAshSka.ClassHelper;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,5 +25,10 @@ namespace MIlitaryOfficeAshSka.Pages
         {
             InitializeComponent();
         }
+        private void btn_exit_Click(object sender, RoutedEventArgs e)
+        {
+            Navigate.mainFrame.GoBack();
+        }
     }
 }
+

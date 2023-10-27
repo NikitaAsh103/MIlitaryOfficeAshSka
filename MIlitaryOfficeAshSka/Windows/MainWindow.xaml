@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MIlitaryOfficeAshSka"
         mc:Ignorable="d"
-        Title="MainWindow" Height="1024" Width="1440">
+        Title="MainWindow" Height="1024" Width="1440"
+        WindowStartupLocation="CenterScreen">
     <Grid>
        
 

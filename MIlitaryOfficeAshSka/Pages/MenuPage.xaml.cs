@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using MIlitaryOfficeAshSka.Pages;
 using MIlitaryOfficeAshSka.ClassHelper;
+using MIlitaryOfficeAshSka.Windows;
 
 namespace MIlitaryOfficeAshSka.Pages
 {
@@ -30,6 +31,18 @@ namespace MIlitaryOfficeAshSka.Pages
         private void create_btn_Click(object sender, RoutedEventArgs e)
         {
             Navigate.mainFrame.Navigate(new CreatePlatoon());
+        }
+
+        private void look_btn_Click(object sender, RoutedEventArgs e)
+        {
+            Navigate.mainFrame.Navigate(new ViewPlatoon());
+        }
+
+        private void add_btn_Click(Object sender, RoutedEventArgs e)
+        {
+           AddMilitary addMilitary = new AddMilitary();
+            addMilitary.Show();
+            
         }
     }
 }

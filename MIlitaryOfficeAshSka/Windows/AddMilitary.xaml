@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MIlitaryOfficeAshSka.Windows"
         mc:Ignorable="d"
-        Title="AddMilitary" Height="600" Width="400">
+        Title="AddMilitary" Height="600" Width="400"
+         WindowStartupLocation="CenterScreen">
     <Grid>
+        
+        <Grid.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF78866B" Offset="0"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+        
 
         <Button
             Grid.Column="1"
@@ -28,8 +37,74 @@
             Grid.ColumnSpan="2"
             VerticalAlignment="Center"
             Height="50"
+            Width="190"
+            BorderThickness="3"
+             Style="{StaticResource tbStyle}" 
+            Text="Введите фамилию"
+            Foreground="#FF8B8B8B"
+            FontSize="20"
+            
             
             />
+        <TextBox
+            Grid.Column="1"
+            Grid.Row="3"
+            Grid.ColumnSpan="2"
+            VerticalAlignment="Center"
+            Height="50"
+            Width="190"
+            BorderThickness="3"
+             Style="{StaticResource tbStyle}" 
+            Text="Введите имя"
+            Foreground="#FF8B8B8B"
+            FontSize="20"
+            
+            
+            
+            />
+        <TextBox
+            Grid.Column="1"
+            Grid.Row="4"
+            Grid.ColumnSpan="2"
+            VerticalAlignment="Center"
+            Height="50"
+            Width="190"
+            BorderThickness="3"
+             Style="{StaticResource tbStyle}"
+            Text="Введите отчество" 
+            Foreground="#FF8B8B8B"
+            FontSize="20"
+            
+            
+            />
+
+        <TextBox
+            Grid.Column="1"
+            Grid.Row="5"
+            Grid.ColumnSpan="2"
+            VerticalAlignment="Center"
+            Height="50"
+            Width="190"
+            BorderThickness="3"
+             Style="{StaticResource tbStyle}"
+            Text="Введите возраст" 
+            Foreground="#FF8B8B8B"
+            FontSize="20"
+            
+            
+            />
+        <ComboBox x:Name="gender" 
+                  Grid.Column="1"
+                  Grid.Row="6"
+                  Grid.ColumnSpan="2"
+                  Height="50"
+                  Width="190"
+                  />
+        <Image   Source="/Image5.png" Stretch="Fill"
+               Grid.Column="0"
+               Grid.Row="0"
+               Height="70"/>
+
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>

@@ -19,25 +19,39 @@
         <Button
             Grid.Row="1"
             Content="Создать взвод"
-            Height="200"
-            Width="900" 
+            Height="130"
+            Width="800" 
             VerticalAlignment="Center"
             HorizontalAlignment="Center"
             Style="{StaticResource btnStyle}"
-            FontSize="80"
+            FontSize="70"
             x:Name="create_btn"
             Click="create_btn_Click"
+            
             />
 
         <Button
             Grid.Row="2"
-            Content="Просмотреть взвод"
-            Height="200"
-            Width="900" 
+            Content="Просмотреть взводы"
+            Height="130"
+            Width="800" 
             VerticalAlignment="Center"
             HorizontalAlignment="Center"
             Style="{StaticResource btnStyle}"
-            FontSize="80"
+            FontSize="70"
+            x:Name="look"
+            Click="look_btn_Click"
+            
+            />
+        <Button
+            Grid.Row="0"
+            Style="{StaticResource btnStyle}"
+            Content="Добавить призывника"
+            FontSize="70"
+            Height="130"
+            Width="800"
+            x:Name="add_btn"
+            Click="add_btn_Click"
             />
 
     </Grid>

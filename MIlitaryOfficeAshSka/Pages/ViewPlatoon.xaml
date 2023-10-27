@@ -28,6 +28,8 @@
            Background="Green"
             BorderBrush="Green"
             FontSize="40"
+            x:Name="btn_exit"
+            Click="btn_exit_Click"
              />
         <Rectangle
             Grid.Column="0"
@@ -67,7 +69,7 @@
                   Margin="5"
                   Grid.ColumnSpan="6"
                   Grid.RowSpan="6"
-                  ScrollViewer.HorizontalScrollBarVisibility="Disabled" d:ItemsSource="{d:SampleData ItemCount=6}" 
+                  ScrollViewer.HorizontalScrollBarVisibility="Disabled" d:ItemsSource="{d:SampleData ItemCount=10}" 
                   >
 
 
